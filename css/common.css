@@ -10,7 +10,7 @@
 .nav ul li a {color: #fff; text-decoration: none;padding: 16px 30px;font-size: 16px}
 .nav ul li a:hover {background-color: #bb0d30; color: #fff !important;}
 .seek{ padding-top:46px; width:1300px; float:right}
-.seek form{ display:block; padding:0 101px 0 78px; z-index:0; width:314px; position:relative; height:36px;}
+.seek form{ display:block; padding:0 101px 0 78px; z-index:0; width:314px; position:relative; height:36px;}/* margin: 0 125px; */
 .seek form .p{ height:36px; width:78px; background:url(../img/wire.png) no-repeat right center; position:absolute ; top:0px; left:0px; line-height:30px; text-align:center; cursor:pointer; color:#4c4c4c; font-size:16px;}
 .seek form .p i{ width:11px; height:5px; background:url(../img/arrows.png) no-repeat; margin-left:6px; vertical-align:3px;}
 .seek form .p b{ font-weight:normal;}
