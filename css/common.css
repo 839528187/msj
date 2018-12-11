@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "微软雅黑",Arial,Verdana,"Tahoma";
+}
+.top img{margin-left: 350px;margin-top: 10px}
+.nav{height: 54px;background-color: #dc143c; }
+.nav ul {list-style: none;margin-left: 350px;}
+.nav ul li {display: inline;line-height: 54px;}
+.nav ul li a {color: #fff; text-decoration: none;padding: 16px 30px;font-size: 16px}
+.nav ul li a:hover {background-color: #bb0d30; color: #fff !important;}
+.seek{ padding-top:46px; width:1300px; float:right}
+.seek form{ display:block; padding:0 101px 0 78px; z-index:0; width:314px; position:relative; height:36px;}
+.seek form .p{ height:36px; width:78px; background:url(../img/wire.png) no-repeat right center; position:absolute ; top:0px; left:0px; line-height:30px; text-align:center; cursor:pointer; color:#4c4c4c; font-size:16px;}
+.seek form .p i{ width:11px; height:5px; background:url(../img/arrows.png) no-repeat; margin-left:6px; vertical-align:3px;}
+.seek form .p b{ font-weight:normal;}
+.seek form .seek_c{ display:none; position:absolute; width:77px; top:36px; left:-1px; border:1px solid #d0d0d0; border-top:none; z-index:9999; background:#fff;}
+.seek form .seek_c span{ display:block; height:30px; line-height:30px; font-size:14px; width:77px; background:url(../img/seek_wire.png) no-repeat bottom center; text-align:center;}
+.seek form .seek_c span:hover{ background:#f0f0f0 url(../img/seek_wire.png) no-repeat bottom center;; cursor:pointer;}
+.seek form .submit{ width:101px; height:38px; background:#dc143c; border:none; text-align:center; font-size:18px; position:absolute; right:-1px; top:-1px; color:#fff; cursor:pointer;}
+.seek form .text{ padding-left:17px; width:298px; height:33px; line-height:35px; font-size:14px; color:#ccc;}
