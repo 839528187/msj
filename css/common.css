@@ -26,3 +26,6 @@
 .footer_em{width: 1200px;height: 1px;position: absolute;background: #c9c9c9;top: 21px;z-index: 0;left: -545px;}
 .footer_title{width: 114px;line-height: 45px;text-align: center;color: #df0303;font-size: 18px;display: block;position: relative;margin: auto;background: #fff;}
 .textss{    width: 114px;line-height: 45px;text-align: center;color: #df0303;font-size: 18px;display: block;position: relative;margin: auto;background: #fff;}
+.links{width: 1190px;padding: 10px 0;}
+.links li{list-style: none}
+.links li a{font-size: 14px;color: #000000}
