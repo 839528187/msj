@@ -3,6 +3,19 @@
     padding: 0;
     font-family: "微软雅黑",Arial,Verdana,"Tahoma";
 }
+/*清除浮动*/
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* 触发 hasLayout */
+    zoom: 1;
+}
 .header{background: #fff}
 .top{width: 1200px;}
 .top img{margin-left: 129px;margin: auto}
@@ -21,7 +34,7 @@
 .seek form .seek_c span:hover{ background:#f0f0f0 url(../img/seek_wire.png) no-repeat bottom center;; cursor:pointer;}
 .seek form .submit{ width:101px; height:38px; background:#dc143c; border:none; text-align:center; font-size:18px; position:absolute; right:-1px; top:-1px; color:#fff; cursor:pointer;}
 .seek form .text{ padding-left:17px; width:298px; height:33px; line-height:35px; font-size:14px; color:#ccc;}
-.footer{clear:both;display:block;margin: 0px auto;background:#fff}
+.footer{clear:both;display:block;margin: 0px auto;background:#fff;margin-top: 10px;padding: 0 0 15px 0;}
 .link{width: 1200px;padding: 10px 10px 0 10px;margin-top: 10px;}
 .footer_em{width: 1200px;height: 1px;position: absolute;background: #c9c9c9;top: 21px;z-index: 0;left: -545px;}
 .footer_title{width: 114px;line-height: 45px;text-align: center;color: #df0303;font-size: 18px;display: block;position: relative;margin: auto;background: #fff;}
