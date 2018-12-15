@@ -33,7 +33,7 @@
 .seek form .seek_c span{ display:block; height:30px; line-height:30px; font-size:14px; width:77px; background:url(../img/seek_wire.png) no-repeat bottom center; text-align:center;}
 .seek form .seek_c span:hover{ background:#f0f0f0 url(../img/seek_wire.png) no-repeat bottom center;; cursor:pointer;}
 .seek form .submit{ width:101px; height:38px; background:#dc143c; border:none; text-align:center; font-size:18px; position:absolute; right:-1px; top:-1px; color:#fff; cursor:pointer;}
-.seek form .text{ padding-left:17px; width:298px; height:33px; line-height:35px; font-size:14px; color:#ccc;}
+.seek form .text{ padding-left:17px; width:298px; height:33px; line-height:35px; font-size:14px; color:#000;}
 /*----------------------底部----------------------*/
 .all_common_footer{width: 1200px; background-color: #fff; overflow: hidden;border-top: 2px solid #e44141;padding-bottom: 50px;margin-top: 10px;}
 .all_common_footer_conter{width: 1180px; height: 100px; margin: 0 auto;}
