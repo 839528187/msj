@@ -236,8 +236,9 @@ h3 {font-size: 14px;padding: 0;margin: 0}
 }
 
 .pagination a.disabled:hover,.pagination a.ellipsis:hover {
-	color: #999;
-	border-color: #e3e3e3
+	color: #999 !important;
+	border-color: #e3e3e3;
+	text-decoration: none !important
 }
 
 .pagination a.disabled {
@@ -248,8 +249,9 @@ h3 {font-size: 14px;padding: 0;margin: 0}
 .pagination a.active {
 	border-color: #f00;
 	background-color: #f00;
-	color: #fff;
-	cursor: default
+	color: #fff !important;
+	cursor: default;
+	text-decoration: none !important
 }
 
 .pagination a.active:hover {
