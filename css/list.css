@@ -344,6 +344,6 @@ h3 {font-size: 14px;padding: 0;margin: 0}
 .news-nav a:hover,.news-nav a.on{background: #d7d7d7;text-decoration: none;}
 .right{float: right !important;}
 .matop15 {margin-top: 15px;}
-.order-mes {padding: 5px 25px;font-size: 14px;}
+.order-mes {padding: 5px;font-size: 14px;}
 .order-mes span{color: #e5004f;}
 .right a{font-size: 14px;color: #666;}
