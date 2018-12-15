@@ -330,7 +330,7 @@ h3 {font-size: 14px;padding: 0;margin: 0}
 .news-title label .ico1{background-position:-46px 0;}
 .news-title label .ico2{background-position:-30px 0;}
 .news-con {overflow: hidden;}
-.news-con img{float: left;margin-right: 14px;max-width:140px;}
+.news-con img{float: left;margin-right: 14px;max-width:140px;width: 142px;height: 112px;}
 .news-con p , .news-con a{color: #656567;}
 .news-con p{font-size: 14px;line-height: 29px;}
 .news-icon1{height:11px;width:18px;background-position:-28px 0;}
@@ -344,3 +344,4 @@ h3 {font-size: 14px;padding: 0;margin: 0}
 .matop15 {margin-top: 15px;}
 .order-mes {padding: 5px 25px;font-size: 14px;}
 .order-mes span{color: #e5004f;}
+.right a{font-size: 14px;color: #666;}
