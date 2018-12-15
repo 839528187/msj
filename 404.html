@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美食家 meishiadd.com 错误页面 404 Not Found</title>
+    <link rel="stylesheet" href="css/404.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+            <a href=""><img src="img/logo.png" alt=""></a>
+            <div class="seek">
+                <form action="">
+                    <input type="text" class="text" placeholder="想要找什么？请输入关键词">
+                    <input type="submit" value="提交" class="submit">
+                </form>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="list.html">酸味美食</a>
+                </li>
+                <li>
+                    <a href="list.html">甜心甜点</a>
+                </li>
+                <li>
+                    <a href="list.html">苦味人生</a>
+                </li>
+                <li>
+                    <a href="list.html">麻辣生活</a>
+                </li>
+                <li>
+                    <a href="list.html">咸情逸致</a>
+                </li>
+                <li>
+                    <a href="list.html">饮食典故</a>
+                </li>
+                <li>
+                    <a href="list.html">健康美食</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="Cont404 area white">
+		<img src="img/404.png" alt="404">
+		<p class="Conttop">抱歉！您访问的页面地址有误，或者该页面不存在</p>
+		<p class="Contzhong"><span id="wait">10 </span>秒后自动返回<a href="http://www.959.cn/" id="href" style="color: #e20612">首页</a></p>
+		<p class="Contbottom">您还可以点击返回<span><a href="javascript:history.go(-1);">&#9666;返回上一页</a></span> &ensp;</a>或者访问 <a href="http://www.959.cn/" target="_blank">首页</a></p>
+	</div>
+	<script type="text/javascript">
+	(function(){
+		var wait = document.getElementById('wait'),href = document.getElementById('href').href,elsetime = (Number(wait.innerHTML)+1)*1000;
+		var interval = setInterval(function(){
+			var time = --wait.innerHTML;
+			if(time <= 0) {
+				location.href = href;
+				clearInterval(interval);
+			}
+		}, 1000);
+
+		setTimeout(function(){
+			location.href = href;
+		},elsetime);
+	})();
+</script>
+
+</body>
+</html>
