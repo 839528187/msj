@@ -48,3 +48,8 @@
 .all_common_footer_img{margin: 18px auto; display: block; width: 218px;}
 .friendship{padding:9px 10px 9px 95px;text-indent:-68px;font-size:12px; color: #656565;width: 1020px;margin: auto;}
 .friendship a{color: #959595;line-height: 20px; padding: 0 5px; font-size:12px;}
+#changyan_floatbar_wrapper{display:none!important}
+#powerby_sohu a{font-size:0!important;line-height:0!important}
+.section-service-w{font-size:0 !important;line-height:0 !important;visible:hidden;}
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-issue-w .issue-btn-w a button.btn-fw{background-image: url(../img/post-btn.png) !important;}
+#SOHUCS, #SOHUCS #SOHU_MAIN{width: 98% !important;}
