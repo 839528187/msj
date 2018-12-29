@@ -183,7 +183,7 @@ h3 {font-size: 14px;padding: 0;margin: 0}
     float: right;
 }
 .msj-comment-form .comment:visited, .msj-comment-form .comment:hover, .msj-comment-form .comment:active, .msj-comment-form .comment:focus {
-    color: #fff;
+    color: #fff !important;
 }
 .msj-comment-wrap .btn.btn-disabled {
     cursor: not-allowed;
