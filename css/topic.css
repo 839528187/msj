@@ -1,0 +1,76 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "微软雅黑",Arial,Verdana,"Tahoma";
+}
+ol, ul {list-style: none;}
+body, button, input, select, textarea {font-family: "微软雅黑",Arial,Verdana,"Tahoma";}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: 400;}
+a {color: #333;text-decoration: none;}
+li {display: list-item;text-align: -webkit-match-parent;}
+.top-bar {height: 40px;background: #dc143c;color: #999;top: 0;position: fixed;z-index: 10000;width: 100%;left: 0;min-width: 990px;}
+.top-bar .bar-left {height: 40px;}
+.left {float: left;}
+.top-bar .bar-left li {float: left;height: 40px;}
+.bar-link a, .top-bar .bar-left li a {font-size: 14px;color: #ccc;height: 40px;line-height: 40px;padding: 0 10px;text-decoration: none;display: inline-block;}
+.bar-link a:hover, .top-bar .bar-left li a:hover {color: #fff;background: #bb0d30;}
+a.top_bar_logo i {
+    display: block;
+    float: left;
+    width: 55px;
+    height: 14px;
+    margin: 13px 10px 0 0;
+    text-indent: -9999em;
+    background: url(//static.meishichina.com/v6/img/lib/top-bar55.png) no-repeat;
+    background: url(//static.meishichina.com/v6/img/lib/top-bar110.png) no-repeat scroll 0 0/55px auto;
+}
+.sliderh {width: 100%;height: 350px;clear: both;position: relative;overflow: hidden;margin-top: 40px;}
+.show1 {height: 350px;overflow: hidden;display: block;float: left;}
+#sliderh {height: 350px;overflow: hidden;}
+#sliderh .show1 h1 {display: block;height: 100%; width: 100%;}
+#sliderh .show1 a {display: block;height: 100%;width: 100%;text-indent: -9999em;}
+.msb {margin: auto;width: 990px;padding: 30px 0;overflow: hidden;}
+.recipeArction {padding: 15px 0;}
+.clear {zoom: 1;}
+.recipeArction .collect_da {display: block;float: right;margin: 0 0 5px 10px;width: 300px;}
+.recipeArction .collect_da li {float: left;width: 25%;}
+.collect_da li a {text-decoration: none;color: #666;}
+.collect_da li a {display: block;overflow: hidden;text-align: center;text-overflow: ellipsis;white-space: nowrap;color: #999;font-size: 11px;}
+.collect_da li a.J_s4 i {background-position: -150px 0;}
+.collect_da li a i {width: 30px;height: 30px;display: block;margin: 2px auto;background: rgba(0,0,0,0) url(http://static.meishichina.com/v6/img/zhen/ix2.png?v=2) no-repeat scroll 0 0/auto 30px;}
+.msb p {font-size: 18px;color: #333;padding: 0 0 20px 0;}
+.mo {
+    font-size: 20px;
+    color: #ff6767;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px 0 20px 25px;
+    background: rgba(0,0,0,0) url(http://static.meishichina.com/v6/img/mo.png) no-repeat scroll left center;
+}
+.mo * {color: #ff6767;}
+.msb_list {
+    width: 1111px;
+}
+.msb_list li {
+    float: left;
+    margin: 0 23px 20px 0;
+    width: 230px;
+    text-align: center;
+    position: relative;
+}
+.msb_list a {
+    color: #333;
+    text-decoration: none;
+}
+.msb_list li img {
+    margin: auto;
+}
+.msb_list span {
+    color: #333;
+    display: block;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
