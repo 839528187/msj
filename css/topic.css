@@ -8,12 +8,12 @@ body, button, input, select, textarea {font-family: "微软雅黑",Arial,Verdana
 h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: 400;}
 a {color: #333;text-decoration: none;}
 li {display: list-item;text-align: -webkit-match-parent;}
-.top-bar {height: 40px;background: #dc143c;color: #999;top: 0;position: fixed;z-index: 10000;width: 100%;left: 0;min-width: 990px;}
+.top-bar {height: 40px;background: #333;color: #999;top: 0;position: fixed;z-index: 10000;width: 100%;left: 0;min-width: 990px;}
 .top-bar .bar-left {height: 40px;}
 .left {float: left;}
 .top-bar .bar-left li {float: left;height: 40px;}
 .bar-link a, .top-bar .bar-left li a {font-size: 14px;color: #ccc;height: 40px;line-height: 40px;padding: 0 10px;text-decoration: none;display: inline-block;}
-.bar-link a:hover, .top-bar .bar-left li a:hover {color: #fff;background: #bb0d30;}
+.bar-link a:hover, .top-bar .bar-left li a:hover {color: #fff;background: #0D0D0D;}
 a.top_bar_logo i {
     display: block;
     float: left;
@@ -74,3 +74,40 @@ a.top_bar_logo i {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.msb_list a:hover span {
+    color: #ff6767;
+}
+.footer-area {
+    padding: 10px 0;
+}
+.footer-area .w {
+    padding-top: 10px;
+    border-top: 1px solid #e8e8e8;
+}
+.w {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ft1 {
+    clear: none;
+    float: left;
+    font-size: 11px;
+    color: #666;
+    width: 680px;
+    padding-top: 10px;
+}
+.ft1 .c3b a {
+    color: #f50;
+}
+
+.ft1  p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+} 
