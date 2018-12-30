@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>重庆美食</title>
     <link rel="stylesheet" href="css/topic.css">
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="top-bar">
         <ul class="bar-left left">
             <li>
                 <a href="">
-                    <i>美食家</i>
-                    首页
+                    美食家首页
                 </a>
             </li>
             <li>
@@ -172,6 +172,9 @@
                 </li>
             </ul>
         </div>
+        <!-- <div class="ui-loading mt10" id="recipeindex_living_loading">
+            <a href="javascript:void(0);">查看更多</a>
+        </div> -->
     </div>
     <div class="footer-area clear">
         <div class="w">
@@ -183,5 +186,24 @@
             </div>
         </div>
     </div>
+    <script>
+        var is_load = false;
+        var get = function(){
+            is_load = true
+            setTimeout(() => {
+                is_load = false;
+            }, 2000);
+        }
+        // console.log(dom_H)
+        $(window).scroll(function(){
+        var dom_H = $('.msb_list').height() + $('.msb_list').offset().top;
+        // scroll at bottom
+            if ($(window).scrollTop() + $(window).height() > dom_H - 100 && !is_load) {
+                // load data
+                get();
+                console.log('11111')
+            }
+        });
+    </script>
 </body>
 </html>

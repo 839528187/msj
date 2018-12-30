@@ -31,7 +31,7 @@ a.top_bar_logo i {
 #sliderh .show1 a {display: block;height: 100%;width: 100%;text-indent: -9999em;}
 .msb {margin: auto;width: 990px;padding: 30px 0;overflow: hidden;}
 .recipeArction {padding: 15px 0;}
-.clear {zoom: 1;}
+.clear {overflow: auto;zoom: 1;}
 .recipeArction .collect_da {display: block;float: right;margin: 0 0 5px 10px;width: 300px;}
 .recipeArction .collect_da li {float: left;width: 25%;}
 .collect_da li a {text-decoration: none;color: #666;}
@@ -111,3 +111,24 @@ a.top_bar_logo i {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 } 
+.ui-loading {
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+}
+.mt10 {
+    margin-top: 10px;
+}
+
+.ui-loading a {
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff6767;
+    background-color: #f8f8f8;
+    outline: 0;
+    user-select: none;
+    cursor: pointer;
+    transition: color .3s ease-in-out .3s,background-color .3s ease-in-out .3s;
+}
