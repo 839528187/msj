@@ -30,7 +30,7 @@ a:hover {color: #dc143c;text-decoration: underline}
 .wx {width: 36px;height: 36px;display:block;margin: 2px auto; background: url(../img/wx.png)}
 .qq {width: 36px;height: 36px;display:block;margin: 2px auto; background: url(../img/qq.png)}
 .xlwb {width: 36px;height: 36px;display:block;margin: 2px auto; background: url(../img/xlwb.png)}
-.jxcp {width: 1030px; margin-top: auto;padding: 49px 0; overflow: hidden}
+.jxcp {width: 1030px; margin-top: auto; overflow: hidden}
 .jxcp p{font-family: "方正楷体简体";font-size: 35px;font-weight: 800;color:#dc143c;}
 .jxcp p i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 0 12px 0 0 ;}
 .neirong {margin: auto; display: block;margin-top: 18px;overflow: hidden;width: 1030px;}
@@ -47,3 +47,4 @@ a:hover {color: #dc143c;text-decoration: underline}
 .fixed-footer-go{position: absolute;bottom: 0;left: 0;width: 69px;height: 69px; background: url(../img/top.png) no-repeat scroll center center/69px 69px;display: none;}
 .footer {padding: 10px 0}
 .w {padding-top: 10px;border-top: 1px solid #ecebeb;position: relative;top: 0;left: 0;width: 1030px;margin-left: auto;margin-right: auto}
+.w p {font-size: 14px;font-family: "宋体";color: #dc143c;margin-top: 18px}
