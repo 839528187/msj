@@ -23,7 +23,7 @@ a:hover {color: #dc143c;text-decoration: underline}
 .img {height: 337px;width: 100%;background: #fbeae5}
 .img img{margin-left: 50px}
 .centent {width: 1030px;margin:auto;padding: 25px 0;overflow: hidden;}
-.jies p {font-size: 16px;color: #000;padding: 0 0 20px 0;width: 695px;line-height: 28px}
+.jies p {font-size: 16px;color: #000;padding: 0 0 30px 0;width: 695px;line-height: 28px}
 .collect_da {display: block;float: right;margin: 0 0 5px 10px; width: 300px;}
 .collect_da li{float: left;width: 25%;margin: 8px auto;}
 .collect_da li a {text-decoration: none;color: #666;display: block;overflow: hidden;text-align: center;font-size: 12px}
@@ -43,7 +43,7 @@ a:hover {color: #dc143c;text-decoration: underline}
 .wenzi span i {font-family: "宋体";font-size: 14px;letter-spacing:5px;color: #dc143c;padding: 0px 0px 0px 10px;font-style: normal}
 .gengduo {margin: auto;background: #ecebeb;display: block;overflow: hidden;width: 1030px;height: 36px;}
 .gengduo span{color: #dc143c;font-size: 20px;text-align: center;display: block;padding: 4px 0 0 0 ;}
-.fixed-footer{left: auto;right: 150px;bottom: 10px; position: fixed;z-index: 102410;height: 58px;}
+.fixed-footer{left: auto;right: 150px;bottom: 10px; position: fixed;z-index: 102410;height: 58px;top: 600px}
 .fixed-footer-go{position: absolute;bottom: 0;left: 0;width: 69px;height: 69px; background: url(../img/top.png) no-repeat scroll center center/69px 69px;display: none;}
 .footer {padding: 10px 0}
 .w {padding-top: 10px;border-top: 1px solid #ecebeb;position: relative;top: 0;left: 0;width: 1030px;margin-left: auto;margin-right: auto}
