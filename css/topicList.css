@@ -1,5 +1,7 @@
 *{margin: 0;padding: 0;font-family: "微软雅黑",Arial,Verdana,"Tahoma";}
 ul {list-style: none}
+a{text-decoration: none;color: #000;}
+a:hover {color: #dc143c;text-decoration: underline}
 /*清除浮动*/
 .clearfix:after{
     content: "";
@@ -29,7 +31,7 @@ ul {list-style: none}
 .qq {width: 36px;height: 36px;display:block;margin: 2px auto; background: url(../img/qq.png)}
 .xlwb {width: 36px;height: 36px;display:block;margin: 2px auto; background: url(../img/xlwb.png)}
 .jxcp {width: 1030px; margin-top: auto;padding: 49px 0; overflow: hidden}
-.jxcp p{font-family: "方正楷体简体";font-size: 31px;font-weight: 800;color:#dc143c;}
+.jxcp p{font-family: "方正楷体简体";font-size: 35px;font-weight: 800;color:#dc143c;}
 .jxcp p i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 0 12px 0 0 ;}
 .neirong {margin: auto; display: block;margin-top: 18px;overflow: hidden;width: 1030px;}
 .neirong ul li {float: left; margin: 0 53px 31px 0;width: 451px;}
@@ -39,6 +41,7 @@ ul {list-style: none}
 .wenzi p {font-family: "宋体";font-size: 12px;color:#000;margin-top: 10px;font-weight: normal;line-height: 28px;padding: 0px 0px 20px 0;}
 .wenzi span {font-family: "宋体";font-size: 14px}
 .wenzi span i {font-family: "宋体";font-size: 14px;letter-spacing:5px;color: #dc143c;padding: 0px 0px 0px 10px;font-style: normal}
-.gengduo {margin: auto;margin-top: 25px;background: #ecebeb;display: block;overflow: hidden;width: 1030px;height: 36px;}
+.gengduo {margin: auto;background: #ecebeb;display: block;overflow: hidden;width: 1030px;height: 36px;}
 .gengduo span{color: #dc143c;font-size: 20px;text-align: center;display: block;padding: 4px 0 0 0 ;}
-.footer{}
+.fixed-footer{left: auto;right: 150px;bottom: 10px; position: fixed;z-index: 102410;height: 58px;}
+.fixed-footer-go{position: absolute;bottom: 0;left: 0;width: 69px;height: 69px; background: url(../img/top.png) no-repeat scroll center center/69px 69px;display: none;}
