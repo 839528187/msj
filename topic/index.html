@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>重庆美食,走进山城重庆品尝渝菜美食-美食家</title>
     <link rel="stylesheet" href="../css/topicList.css">
+    <script type="text/javascript" src="../js/jquery_cookie.js"></script>
 </head>
 <body>
     <div class="top">
@@ -69,7 +70,7 @@
                 美食精选
             </p>
             <div class="neirong">
-                <ul>
+                <ul class="jiazai">
                     <li>
                         <div class="imgs">
                             <a href=""><img src="../img/neirongimg.png" alt=""></a>
@@ -315,7 +316,7 @@
                 
             </div>
             <div class="gengduo">
-                <span>更多美食</span>
+                <a href="javascript:;" style="text-decoration: none"><span>更多美食</span></a>
             </div>
         </div>
     </div>
@@ -324,10 +325,26 @@
     </div>
     <div class="footer">
         <div class="w">
-            <p>美食家 - 品尝重庆美食的味道！</p>
-            <p style="color: #000;padding: 0 0px 20px 0 ;">Copyright©2018 本站己启用CDN加速服务 京ICP备14024137号-2</p>
+            <p><a style="color:#dc143c" href="">美食家 - 品尝重庆美食的味道！</a></p>
+            <p style="color: #000;padding: 0 0px 20px 0 ;font-size: 12px;">Copyright©2018 本站己启用CDN加速服务 京ICP备14024137号-2</p>
         </div>
     </div>
     <script type="text/javascript" src="../js/topic.js"></script>
+    <script>
+        /*初始化*/
+        var counter = 0; /*计数器*/
+        var pageStart = 1; /*offset*/
+        var pageSize = 4; /*size*/
+        $(document).on('click','.gengduo',function() {
+            pageStart ++
+            getData(pageStart,pageSize);
+        });
+        function getData(offset,size) {
+            var result = '';
+            result += '<li><div class="imgs"><a href=""><img src="../img/neirongimg.png" alt=""></a></div><div class="wenzi"><h3><a href="">重庆麻辣火锅11</a></h3><p><a href="">渝菜，也称重庆菜，渝菜是以巴渝地区菜品为主，渝菜以味型鲜明，主次有序为特色又以麻辣鲜、嫩、烫为重点，变化运用，终成百菜百味的风格，广受大众喜爱。 由重庆商委牵头编制渝菜标</a></p><span>美食热度<i>★★★★★</i></span></div></li>'
+            $('.jiazai').append(result);
+        }
+
+    </script>
 </body>
 </html>
