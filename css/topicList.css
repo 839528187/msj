@@ -1,7 +1,7 @@
 @import url("topicCommon.css");
 .centent {width: 1200px;margin:auto;padding: 25px 0 0 80px;overflow: hidden;}
 .jxcp {width: 1200px; margin-top: auto; overflow: hidden}
-.jxcp p{font-family: "宋体";font-size: 30px;font-weight: bold;color:#dc143c;line-height: 45px;}
+.jxcp p{font-family: "宋体";font-size: 30px;font-weight: bold;color:#dc143c;line-height: 45px;position: relative;}
 .jxcp p i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 15px 12px 0 0 ;}
 .neirong {margin: auto; display: block;margin-top: 18px;overflow: hidden;width: 1200px;}
 .neirong ul li {float: left;margin: 0 0px 31px 0;width: 600px;}
@@ -19,3 +19,4 @@
 .weixin_dialog_tit a{width: 16px;height: 16px;position: absolute;right: 0;top: 0;color: #999;text-decoration: none;font-size: 16px;}
 .erweima_dialog{text-align: center;padding: 15px 10px 0;min-height: 150px;}
 .dialog_share_to{font-size: 12px;text-align: left;line-height: 22px;color: #666;}
+.xiantiao {width: 80%;height: 1px;border-bottom: 1px solid #ecebeb;position: absolute;top: 21px;margin-left: 30px;}
