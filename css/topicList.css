@@ -1,8 +1,8 @@
 @import url("topicCommon.css");
 .centent {width: 1030px;margin:auto;padding: 25px 0;overflow: hidden;}
 .jxcp {width: 1030px; margin-top: auto; overflow: hidden}
-.jxcp p{font-family: "方正楷体简体";font-size: 35px;font-weight: 800;color:#dc143c;}
-.jxcp p i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 0 12px 0 0 ;}
+.jxcp p{font-family: "方正楷体简体";font-size: 35px;font-weight: bold;color:#dc143c;}
+.jxcp p i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 15px 12px 0 0 ;}
 .neirong {margin: auto; display: block;margin-top: 18px;overflow: hidden;width: 1030px;}
 .neirong ul li {float: left; margin: 0 53px 31px 0;width: 451px;}
 .imgs{width: 230px;height: 230px;float: left;}

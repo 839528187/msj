@@ -20,7 +20,7 @@ a:hover {color: #dc143c;text-decoration: underline}
 .left li {height: 40px;float: left;}
 .left li a{color: #fff;font-size: 16px;height: 40;line-height: 40px;padding: 0 10px;text-decoration: none;display: inline-block}
 .left li a:hover {background: #bb0d30}
-.img {height: 337px;width: 100%;background: #fbeae5}
+.img {height: 337px;width: 100%;background: #fbeae5;text-align: center}
 .img img{margin-left: 50px}
 .fixed-footer{left: auto;right: 150px;bottom: 10px; position: fixed;z-index: 102410;height: 58px;top: 600px}
 .fixed-footer-go{position: absolute;bottom: 0;left: 0;width: 69px;height: 69px; background: url(../img/top.png) no-repeat scroll center center/69px 69px;display: none;}
