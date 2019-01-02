@@ -13,3 +13,9 @@
 .wenzi span i {font-family: "宋体";font-size: 14px;letter-spacing:5px;color: #dc143c;padding: 0px 0px 0px 10px;font-style: normal}
 .gengduo {margin: auto;background: #ecebeb;display: block;overflow: hidden;width: 1030px;height: 36px;}
 .gengduo span{color: #dc143c;font-size: 20px;text-align: center;display: block;padding: 4px 0 0 0 ;}
+
+.weixin_dialog{display: none;position: fixed;top: 50px;left: -500px;width: 240px;background: #fff;padding: 10px;border: solid 1px #d8d8d8;z-index: 11001;font-size: 12px;box-sizing: border-box;}
+.weixin_dialog_tit{font-size: 12px;font-weight: bold;text-align: left;line-height: 16px;height: 16px;position: relative;color: #000;}
+.weixin_dialog_tit a{width: 16px;height: 16px;position: absolute;right: 0;top: 0;color: #999;text-decoration: none;font-size: 16px;}
+.erweima_dialog{text-align: center;padding: 15px 10px 0;min-height: 150px;}
+.dialog_share_to{font-size: 12px;text-align: left;line-height: 22px;color: #666;}

@@ -177,7 +177,7 @@ function shareTo(stype){
     }
     //qq好友接口的传参
     if(stype == 'qq'){
-        window.open('http://connect.qq.com/widget/shareqq/index.html?url='+document.location.href+'?sharesource=qzone&title='+ftit+'&pics='+lk+'&summary='+'&desc=美食家);
+        window.open('http://connect.qq.com/widget/shareqq/index.html?url='+document.location.href+'?sharesource=qzone&title='+ftit+'&pics='+lk+'&summary='+'&desc=美食家');
     }
     //生成二维码给微信扫描分享
     if(stype == 'wechat'){
