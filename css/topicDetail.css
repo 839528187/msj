@@ -9,12 +9,12 @@
 .originConent img {width: 269px; height: 200px;padding: 0 0 0 25px;}
 .zuofa {margin-top: 15px;overflow: hidden;}
 .zuofa div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
-.zuofaConent {margin-top: 15px;height: 100px;overflow: hidden;}
+.zuofaConent {margin-top: 15px;overflow: hidden;}
 .zuofaConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 659px;float: left;margin-top: 10px;text-indent:50px;}
 .zuofaConent img {width: 269px; height: 200px;padding: 0 0 0 25px;}
 .icon {margin-top: 30px;text-align: center}
 .icon img{width: 53px; height: 53px;}
-.gongxiao{margin-top: 18px;overflow: hidden;}
+.gongxiao{margin-top: 40px;overflow: hidden;}
 .gongxiao div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
 .gongxiao p{font-size: 16px;font-family: "宋体";line-height: 28px;margin-top: 10px;width: 954px;}
 .xiangke{margin-top: 25px;overflow: hidden;}
