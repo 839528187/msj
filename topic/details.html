@@ -39,38 +39,48 @@
         </div>
     </div>
     <div class="huadong">
-        <div class="nav scroll-nav">
-            <p>起源</p>
-        </div>
-        <div class="nav scroll-nav">
-            <p>做法</p>
-        </div>
-        <div class="nav scroll-nav">
-            <p>功效</p>
-        </div>
-        <div class="nav scroll-nav">
-            <p>相克</p>
-        </div>
-        <div class="navd scroll-nav">
-            <i></i>
-        </div>
+        <a href="javascript:;" class="scroll-nav">
+            <div class="nav">
+                <p>起源</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="scroll-nav">
+            <div class="nav">
+                <p>做法</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="scroll-nav">
+            <div class="nav">
+                <p>功效</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="scroll-nav">
+            <div class="nav">
+                <p>相克</p>
+            </div>
+        </a>
+        <a href="javascript:scroll(0,0)">
+            <div class="navd">
+                <i></i>
+            </div>
+        </a>
     </div>
     <div class="jies">
         <ul class="collect_da">
             <li>
-                <a href="">
+                <a href="javascript:;" class="weixinBtn">
                     <i class="wx"></i>
                     微信
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="javascript:;" onclick="shareTo('qq')">
                     <i class="qq"></i>
                     QQ好友
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="javascript:;" onclick="shareToSinaWB(event)">
                     <i class="xlwb"></i>
                     新浪微博
                 </a>
@@ -156,8 +166,24 @@
             <p style="color: #000;padding: 0 0px 20px 0 ;font-size: 12px;">Copyright©2018 本站己启用CDN加速服务 京ICP备14024137号-2</p>
         </div>
     </div>
+    <div class="weixin_dialog">
+        <div class="weixin_dialog_tit">
+            <span>分享到微信朋友圈</span>
+            <a href="javascript:;">×</a>
+        </div>
+        <div class="erweima_dialog"></div>
+        <div class="dialog_share_to">
+            打开微信，点击底中的“发现”
+            <br>
+            使用“扫一扫”即可将网页分享至微信
+        </div>
+    </div>
     <script src="../js/jquery_cookie.js"></script>
     <script src="../js/swiper_bottom.js"></script>
+    <script src="../js/fexdgpt.js"></script>
+    <script src="../js/jquery.qrcode.js"></script>
+    <script src="../js/qrcode.js"></script>
+    <script src="../js/utf.js"></script>
     <script src="../js/jquery.scroll.floor.js"></script>
     <script>
         $(function(){
@@ -183,9 +209,49 @@
                 navClass : '.scroll-nav',           //导航盒子class;默认为'.scroll-nav'
                 activeClass : 'active',             //导航高亮class;默认为'active'
                 delayTime:300,                      //点击导航，滚动条滑动到该位置的时间间隔;默认为200
-                activeTop:400,                      //楼层到窗口的某个位置时，导航高亮（设置该位置）;默认为100
+                activeTop:300,                      //楼层到窗口的某个位置时，导航高亮（设置该位置）;默认为100
                 scrollTop:0                         //点击导航，楼层滑动到窗口的某位置;默认为100
             });
+            /**分享*/
+            jQuery('.erweima_dialog').qrcode({
+                render: "table",                //二维码生成方式
+                text  : location.href , 
+                width : "185",               //二维码的宽度
+                height: "185",
+            });
+            $('.erweima_dialog').find('table').css('margin','auto')
+            $('.navd').click(function(){
+                $('html,body').animate({'scrollTop' : 0},300);
+            })
+            $('.weixinBtn').click(function(){
+                $('.weixin_dialog').show()
+            })
+
+            var win_width = $(window).width()
+            var wx_left = (win_width/2)-($('.weixin_dialog').outerWidth()/2)
+            $('.weixin_dialog').css('left',wx_left)
+            $('.bds_weixin').click(function(){
+                $('.weixin_dialog').css('display','block')
+            })
+            $('.weixin_dialog_tit a').click(function(){
+                $('.weixin_dialog').css('display','none')
+            })
+
+            
+            window.onscroll = function () {
+                var distance = document.documentElement.scrollTop || document.body.scrollTop;
+                if (distance >= 320) {
+                    $('.huadong').show()
+
+                } else {
+                    $('.huadong').hide()
+                }
+                // var Top = document.getElementById("btnTop");
+                // Top.onclick = function () {
+                //     document.documentElement.scrollTop = document.body.scrollTop = 0;
+                // }
+                
+            }
         });
         
     </script>

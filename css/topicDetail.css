@@ -25,9 +25,16 @@
 .xian img,.swiper-slide {width: 221px; height: 221px ;margin-top: 18px;display: block;float: left; }
 
 /**滑动*/
-.huadong {overflow: hidden;float: left;padding: 170px 0 0 80px;position: fixed;top: 100px;right: 50%;margin-right: 590px;}
+.huadong {overflow: hidden;float: left;/* padding: 170px 0 0 80px; */position: fixed;top: 104px;right: 50%;margin-right: 590px;display: none;}
+.huadong a:hover {color: #000;text-decoration: none}
 .nav {width: 41px;height: 41px;background: #ffffff;border-radius: 50%;border: 1px solid #000000;margin-top: 3px;}
-.nav.active {border: 1px solid #dc143c;color: #dc143c}
+.active .nav {border: 1px solid #dc143c;color: #dc143c}
 .nav p {text-align: center;margin-top: 10px;font-size: 16px;font-family: "黑体";}
-.navd {width: 41px;height: 41px;background: #ffffff;border-radius: 50%;border: 1px solid #dc143c;margin-top: 3px;}
-.navd i {position: absolute;left: 85px;width: 30px;height: 30px; background: url(../img/navd.png) no-repeat scroll center center/30px 30px;display: block;padding: 11px 0 0 2px;}
+.navd {width: 41px;height: 41px;background: #ffffff;border-radius: 50%;border: 1px solid #dc143c;margin-top: 3px;position: relative;}
+.navd i {position: absolute;left: 4px;width: 30px;height: 30px;background: url(../img/navd.png) no-repeat scroll center center/30px 30px;display: block;padding: 11px 0 0 2px;}
+
+.weixin_dialog{display: none;position: fixed;top: 50px;left: -500px;width: 240px;background: #fff;padding: 10px;border: solid 1px #d8d8d8;z-index: 11001;font-size: 12px;box-sizing: border-box;}
+.weixin_dialog_tit{font-size: 12px;font-weight: bold;text-align: left;line-height: 16px;height: 16px;position: relative;color: #000;}
+.weixin_dialog_tit a{width: 16px;height: 16px;position: absolute;right: 0;top: 0;color: #999;text-decoration: none;font-size: 16px;}
+.erweima_dialog{text-align: center;padding: 15px 10px 0;min-height: 150px;}
+.dialog_share_to{font-size: 12px;text-align: left;line-height: 22px;color: #666;}
