@@ -63,7 +63,7 @@
     </div>
     <div class="substance">
         <div class="origin">
-            <div>
+            <div class="overflow">
                 <i></i>
                 <span>火锅起源</span>
             </div>
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="zuofa">
-            <div>
+            <div class="overflow">
                 <i></i>
                 <span>火锅做法</span>
             </div>
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="gongxiao">
-            <div>
+            <div class="overflow">
                 <i></i>
                 <span>美食功效</span>
             </div>
@@ -108,7 +108,7 @@
                     严重不足，体内产生大量废物。正确的做法是在开始吃肉时便吃少量淀粉类食物，一则帮助控制食量，二则保护胃肠健康，同时有益营养平</p>
         </div>
         <div class="xiangke">
-            <div>
+            <div class="overflow">
                 <i></i>
                 <span>食谱相克</span>
             </div>
@@ -116,11 +116,11 @@
                     严重不足，体内产生大量废物。正确的做法是在开始吃肉时便吃少量淀粉类食物，一则帮助控制食量，二则保护胃肠健康，同时有益营养平</p>
         </div>
         <div class="tuji">
-            <div class="xian">
-                <img src="../img/tuji.png" alt="">
-                <img src="../img/tuji.png" alt="">
-                <img src="../img/tuji.png" alt="">
-                <img src="../img/tuji.png" alt="">
+            <div class="xian swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/tuji.png" alt=""></div>
+                <div class="swiper-slide"><img src="../img/tuji.png" alt=""></div>
+                <div class="swiper-slide"><img src="../img/tuji.png" alt=""></div>
+                <div class="swiper-slide"><img src="../img/tuji.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -130,5 +130,21 @@
             <p style="color: #000;padding: 0 0px 20px 0 ;font-size: 12px;">Copyright©2018 本站己启用CDN加速服务 京ICP备14024137号-2</p>
         </div>
     </div>
+    <script src="../js/jquery_cookie.js"></script>
+    <script src="http://assets.static.959.cn/video/Js/pc/swiper_bottom.js"></script>
+    <script>
+        $(function(){
+            $('.icon').click(function(){
+                $('.zuofaConent').css('height','auto')
+                $(this).hide()
+            })
+            var mySwiper = new Swiper('.tuji', {
+                autoplay: 2000,//可选选项，自动滑动
+                loop : true,
+                slidesPerView : 4,
+                slidesPerGroup : 1,
+            })
+        })
+    </script>
 </body>
 </html>
