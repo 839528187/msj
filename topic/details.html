@@ -38,6 +38,23 @@
             <img src="../img/banner.png" alt="重庆美食">
         </div>
     </div>
+    <div class="huadong">
+        <div class="nav scroll-nav">
+            <p>起源</p>
+        </div>
+        <div class="nav scroll-nav">
+            <p>做法</p>
+        </div>
+        <div class="nav scroll-nav">
+            <p>功效</p>
+        </div>
+        <div class="nav scroll-nav">
+            <p>相克</p>
+        </div>
+        <div class="navd scroll-nav">
+            <i></i>
+        </div>
+    </div>
     <div class="jies">
         <ul class="collect_da">
             <li>
@@ -62,7 +79,7 @@
         <p>渝菜，也称重庆菜，渝菜是以巴渝地区菜品为主，渝菜以味型鲜明，主次有序为特色又以麻辣鲜、嫩、烫为重点，变化运用，终成百菜百味的风格，广受大众喜爱。 由重庆商委牵头编制渝菜标准体系渝菜术语和定义》及首批12个渝菜烹饪技术规范，已经通过国家标准委审核备案，并正式发布。</p>
     </div>
     <div class="substance">
-        <div class="origin">
+        <div class="origin scroll-floor">
             <div class="overflow">
                 <i></i>
                 <span>火锅起源</span>
@@ -77,7 +94,7 @@
                 <img src="../img/details.png" alt="">        
             </div>
         </div>
-        <div class="zuofa">
+        <div class="zuofa scroll-floor">
             <div class="overflow">
                 <i></i>
                 <span>火锅做法</span>
@@ -99,7 +116,7 @@
                 <img src="../img/details_ico.png" alt="">
             </div>
         </div>
-        <div class="gongxiao">
+        <div class="gongxiao scroll-floor">
             <div class="overflow">
                 <i></i>
                 <span>美食功效</span>
@@ -107,7 +124,7 @@
             <p>火锅与主食：吃火锅时往往会忘记主食，或者在肉残汤浓的时候才下一点面条、小饺子或年糕片。这种做法的结果就是肉类吃得过量，淀粉
                     严重不足，体内产生大量废物。正确的做法是在开始吃肉时便吃少量淀粉类食物，一则帮助控制食量，二则保护胃肠健康，同时有益营养平</p>
         </div>
-        <div class="xiangke">
+        <div class="xiangke scroll-floor">
             <div class="overflow">
                 <i></i>
                 <span>食谱相克</span>
@@ -131,7 +148,8 @@
         </div>
     </div>
     <script src="../js/jquery_cookie.js"></script>
-    <script src="http://assets.static.959.cn/video/Js/pc/swiper_bottom.js"></script>
+    <script src="../js/swiper_bottom.js"></script>
+    <script src="../js/jquery.scroll.floor.js"></script>
     <script>
         $(function(){
             $('.icon').click(function(){
@@ -144,7 +162,16 @@
                 slidesPerView : 4,
                 slidesPerGroup : 1,
             })
-        })
+            scrollFloor({
+                floorClass : '.scroll-floor',       //楼层盒子class;默认为'.scroll-floor'
+                navClass : '.scroll-nav',           //导航盒子class;默认为'.scroll-nav'
+                activeClass : 'active',             //导航高亮class;默认为'active'
+                delayTime:300,                      //点击导航，滚动条滑动到该位置的时间间隔;默认为200
+                activeTop:350,                      //楼层到窗口的某个位置时，导航高亮（设置该位置）;默认为100
+                scrollTop:0                         //点击导航，楼层滑动到窗口的某位置;默认为100
+            });
+        });
+        
     </script>
 </body>
 </html>
