@@ -1,31 +1,31 @@
 @import url("topicCommon.css");
-.substance {width: 1030px; margin: auto;padding: 0 0 20px 0}
+.substance {width: 1200px; margin: auto;padding: 0 0 20px 70px}
 .origin{margin-top: 30px; overflow: hidden;}
 .overflow{overflow: hidden;}
 .origin div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
 .origin div span,.xiangke div span,.xiangke div span,.gongxiao div span,.zuofa div span {font-family: "方正楷体简体";font-size: 30px;font-weight: 800;color:#dc143c;line-height: 40px;height: 40px;float: left;}
 .originConent {margin-top: 15px;}
-.originConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 659px;float: left;text-indent:50px;}
+.originConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 820px;float: left;text-indent:50px;}
 .originConent img {width: 269px; height: 200px;padding: 0 0 0 25px;}
-.zuofa {margin-top: 15px;overflow: hidden;}
+.zuofa {margin-top: 20px;overflow: hidden;}
 .zuofa div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
 .zuofaConent {margin-top: 15px;overflow: hidden;}
-.zuofaConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 659px;float: left;margin-top: 10px;text-indent:50px;}
+.zuofaConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 820px;float: left;margin-top: 10px;text-indent:50px;}
 .zuofaConent img {width: 269px; height: 200px;padding: 0 0 0 25px;}
 .icon {margin-top: 30px;text-align: center}
 .icon img{width: 53px; height: 53px;}
 .gongxiao{margin-top: 40px;overflow: hidden;}
 .gongxiao div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
-.gongxiao p{font-size: 16px;font-family: "宋体";line-height: 28px;margin-top: 10px;width: 954px;}
+.gongxiao p{font-size: 16px;font-family: "宋体";line-height: 28px;margin-top: 10px;width: 1100px;}
 .xiangke{margin-top: 25px;overflow: hidden;}
 .xiangke div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
-.xiangke p{font-size: 16px;font-family: "宋体";line-height: 28px;margin-top: 10px;width: 954px;}
-.tuji {margin-top: 38px;overflow: hidden;width: 1030px;height: 239px;}
-.xian {padding-top: 10px;border-top: 1px solid #ecebeb;position: relative;top: 0;left: 0;width: 1030px;margin-left: auto;margin-right: auto}
+.xiangke p{font-size: 16px;font-family: "宋体";line-height: 28px;margin-top: 10px;width: 1100px;}
+.tuji {margin-top: 38px;overflow: hidden;width: 1200px;height: 239px;}
+.xian {padding-top: 10px;border-top: 1px solid #ecebeb;position: relative;top: 0;left: 0;width: 1200px;margin-left: auto;margin-right: auto}
 .xian img,.swiper-slide {width: 221px; height: 221px ;margin-top: 18px;display: block;float: left; }
 
 /**滑动*/
-.huadong {overflow: hidden;float: left;/* padding: 170px 0 0 80px; */position: fixed;top: 104px;right: 50%;margin-right: 590px;display: none;}
+.huadong {overflow: hidden;float: left;/* padding: 170px 0 0 80px; */position: fixed;top: 104px;right: 50%;margin-right: 620px;display: none;}
 .huadong a:hover {color: #000;text-decoration: none}
 .nav {width: 41px;height: 41px;background: #ffffff;border-radius: 50%;border: 1px solid #000000;margin-top: 3px;}
 .active .nav {border: 1px solid #dc143c;color: #dc143c}
