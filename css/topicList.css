@@ -9,7 +9,7 @@
 .wenzi {display: block;margin-left: 205px;width: 300px;padding: 0px 43px;}
 .wenzi h3 {font-size: 24px;font-weight: normal;padding: 0px 0px 0px 70px;}
 .wenzi p {font-family: "宋体";font-size: 12px;color:#000;margin-top: 10px;font-weight: normal;line-height: 28px;padding: 0px 0px 15px 0;}
-.wenzi span {font-family: "宋体";font-size: 14px}
+.wenzi span {font-size: 14px}
 .wenzi span i {font-family: "宋体";font-size: 14px;letter-spacing:5px;color: #dc143c;padding: 0px 0px 0px 10px;font-style: normal}
 .gengduo {margin: auto;background: #ecebeb;display: block;overflow: hidden;width: 1200px;height: 36px;}
 .gengduo span{color: #dc143c;font-size: 20px;text-align: center;display: block;padding: 4px 0 0 0 ;}
