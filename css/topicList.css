@@ -6,6 +6,7 @@
 .neirong {margin: auto; display: block;margin-top: 18px;overflow: hidden;width: 1200px;}
 .neirong ul li {float: left;margin: 0 0px 31px 0;width: 600px;}
 .imgs{width: 230px;height: 230px;float: left;}
+.imgs a img {width: 230px;height: 230px;}
 .wenzi {display: block;margin-left: 205px;width: 300px;padding: 0px 43px;}
 .wenzi h3 {font-size: 24px;font-weight: normal;padding: 0px 0px 0px 70px;}
 .wenzi p {font-family: "宋体";font-size: 12px;color:#000;margin-top: 10px;font-weight: normal;line-height: 28px;padding: 0px 0px 15px 0;}

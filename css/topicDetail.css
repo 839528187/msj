@@ -5,12 +5,12 @@
 .origin div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
 .origin div span,.xiangke div span,.xiangke div span,.gongxiao div span,.zuofa div span {font-family: "方正楷体简体";font-size: 30px;font-weight: 800;color:#dc143c;line-height: 40px;height: 40px;float: left;}
 .originConent {margin-top: 15px;}
-.originConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 820px;float: left;text-indent:50px;}
+.originConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 820px;float: left;}
 .originConent img {width: 269px; height: 200px;padding: 0 0 0 25px;}
 .zuofa {margin-top: 20px;overflow: hidden;}
 .zuofa div i{width: 28px; height: 28px;display: block;background: url(../img/jxms.png) no-repeat scroll left center;float: left;padding: 8px 12px 0 0 ;}
 .zuofaConent {margin-top: 15px;overflow: hidden;}
-.zuofaConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 820px;float: left;margin-top: 10px;text-indent:50px;}
+.zuofaConent p{font-size: 16px;font-family: "宋体";line-height: 28px;width: 820px;float: left;margin-top: 10px;}
 .zuofaConent img {width: 269px; height: 200px;padding: 0 0 0 25px;}
 .icon {margin-top: 30px;text-align: center}
 .icon img{width: 53px; height: 53px;}
