@@ -17,11 +17,11 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
     }
     //当内容中没有图片时，设置分享图片为网站logo
     if(flink == ''){
-        lk = 'http://'+window.location.host+'/static/images/logo.png';
+        lk = 'https://static.meishiadd.com'+'/pc/img/logo.png';
     }
     //如果是上传的图片则进行绝对路径拼接
     if(flink.indexOf('/uploads/') != -1) {
-        lk = 'http://'+window.location.host+flink;
+        lk = 'https://static.meishiadd.com'+flink;
     }
     //百度编辑器自带图片获取
     if(flink.indexOf('ueditor') != -1){
@@ -32,7 +32,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
   function shareToSinaWB(event){
       event.preventDefault();
       
-      var _shareUrl = 'http://v.t.sina.com.cn/share/share.php?&appkey=895033136';     //真实的appkey，必选参数 
+      var _shareUrl = 'https://v.t.sina.com.cn/share/share.php?&appkey=895033136';     //真实的appkey，必选参数 
       _shareUrl += '&url='+ encodeURIComponent(_url||document.location);     //参数url设置分享的内容链接|默认当前页location，可选参数
       _shareUrl += '&title=' + encodeURIComponent(_title||document.title);    //参数title设置分享的标题|默认当前页标题，可选参数
       _shareUrl += '&source=' + encodeURIComponent(_source||'');
@@ -46,7 +46,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToQzone(event){
      event.preventDefault();
      
-     var _shareUrl = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?';
+     var _shareUrl = 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?';
      _shareUrl += 'url=' + encodeURIComponent(_url||document.location);   //参数url设置分享的内容链接|默认当前页location
      _shareUrl += '&showcount=' + _showcount||0;      //参数showcount是否显示分享总数,显示：'1'，不显示：'0'，默认不显示
      _shareUrl += '&desc=' + encodeURIComponent(_desc||'分享的描述');    //参数desc设置分享的描述，可选参数
@@ -61,7 +61,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToTieba(event){
      event.preventDefault();
      
-     var _shareUrl = 'http://tieba.baidu.com/f/commit/share/openShareApi?';
+     var _shareUrl = 'https://tieba.baidu.com/f/commit/share/openShareApi?';
      _shareUrl += 'title=' + encodeURIComponent(_title||document.title);  //分享的标题
      _shareUrl += '&url=' + encodeURIComponent(_url||document.location);  //分享的链接
      _shareUrl += '&pic=' + encodeURIComponent(_pic||'');    //分享的图片
@@ -72,7 +72,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToDouban(event){
      event.preventDefault();
  
-     var _shareUrl = 'http://shuo.douban.com/!service/share?';
+     var _shareUrl = 'https://shuo.douban.com/!service/share?';
      _shareUrl += 'href=' + encodeURIComponent(_url||location.href);    //分享的链接
     _shareUrl += '&name=' + encodeURIComponent(_title||document.title);    //分享的标题
      _shareUrl += '&image=' + encodeURIComponent(_pic||'');    //分享的图片
@@ -83,7 +83,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToQQwb(event){
      event.preventDefault();
      
-     var _shareUrl = 'http://v.t.qq.com/share/share.php?';
+     var _shareUrl = 'https://v.t.qq.com/share/share.php?';
      _shareUrl += 'title=' + encodeURIComponent(_title||document.title);    //分享的标题
      _shareUrl += '&url=' + encodeURIComponent(_url||location.href);    //分享的链接
      _shareUrl += '&appkey=5bd32d6f1dff4725ba40338b233ff155';    //在腾迅微博平台创建应用获取微博AppKey
@@ -96,7 +96,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToRenren(event){
      event.preventDefault();
      
-     var _shareUrl = 'http://***/share/buttonshare.do?';
+     var _shareUrl = 'https://***/share/buttonshare.do?';
      _shareUrl += 'link=' + encodeURIComponent(_url||location.href);   //分享的链接
      _shareUrl += '&title=' + encodeURIComponent(_title||document.title);     //分享的标题
      window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
@@ -105,7 +105,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  //分享到开心网
  function shareToKaixin(event){
     event.preventDefault();
-         var _shareUrl = 'http://www.kaixin001.com/rest/records.php?';
+         var _shareUrl = 'https://www.kaixin001.com/rest/records.php?';
              _shareUrl += 'url=' + encodeURIComponent(_url||location.href);    //分享的链接
     _shareUrl += '&content=' + encodeURIComponent('分享的文字');    //需要分享的文字，当文字为空时，自动抓取分享网址的title
      _shareUrl += '&pic=' + encodeURIComponent(_pic||'');     //分享的图片,多个使用半角逗号分隔
@@ -118,7 +118,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToKaixin2(event){
      event.preventDefault();
      
-     var _shareUrl = 'http://www.kaixin001.com/repaste/share.php?';
+     var _shareUrl = 'https://www.kaixin001.com/repaste/share.php?';
     _shareUrl += 'rtitle=' + encodeURIComponent(_title||document.title);   //分享的标题
     window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
  }
@@ -127,7 +127,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToFacebook(event){
      event.preventDefault();
      
-     var _shareUrl = 'http://www.facebook.com/sharer/sharer.php?';
+     var _shareUrl = 'https://www.facebook.com/sharer/sharer.php?';
      _shareUrl += 'u=' + encodeURIComponent(_url||location.href);    //分享的链接
      _shareUrl += '&t=' + encodeURIComponent(_title||document.title);    //分享的标题
      window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
@@ -138,7 +138,7 @@ var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
  function shareToTwitter(event){
      event.preventDefault();
      
-    var _shareUrl = 'http://twitter.com/intent/tweet?';
+    var _shareUrl = 'https://twitter.com/intent/tweet?';
      _shareUrl += 'url=' + encodeURIComponent(_url||location.href);    //分享的链接
      _shareUrl += '&text=' + encodeURIComponent(_title||document.title);    //分享的标题
      window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
@@ -157,11 +157,11 @@ function shareTo(stype){
     }
     //当内容中没有图片时，设置分享图片为网站logo
     if(flink == ''){
-        lk = 'http://'+window.location.host+'/static/images/logo.png';
+        lk = 'https://static.meishiadd.com'+'/pc/img/logo.png';
     }
     //如果是上传的图片则进行绝对路径拼接
     if(flink.indexOf('/uploads/') != -1) {
-        lk = 'http://'+window.location.host+flink;
+        lk = 'https://static.meishiadd.com'+flink;
     }
     //百度编辑器自带图片获取
     if(flink.indexOf('ueditor') != -1){
@@ -173,14 +173,14 @@ function shareTo(stype){
     }
     //新浪微博接口的传参
     if(stype=='sina'){
-        window.open('http://service.weibo.com/share/share.php?url='+document.location.href+'?sharesource=weibo&title='+ftit+'&pic='+lk+'&appkey=2706825840');
+        window.open('https://service.weibo.com/share/share.php?url='+document.location.href+'?sharesource=weibo&title='+ftit+'&pic='+lk+'&appkey=2706825840');
     }
     //qq好友接口的传参
     if(stype == 'qq'){
-        window.open('http://connect.qq.com/widget/shareqq/index.html?url='+document.location.href+'?sharesource=qzone&title='+ftit+'&pics='+lk+'&summary='+'&desc=美食家');
+        window.open('https://connect.qq.com/widget/shareqq/index.html?url='+document.location.href+'?sharesource=qzone&title='+ftit+'&pics='+lk+'&summary='+'&desc=美食家');
     }
     //生成二维码给微信扫描分享
     if(stype == 'wechat'){
-        window.open('inc/qrcode_img.php?url=http://zixuephp.net/article-1.html');
+        window.open('inc/qrcode_img.php?url=https://zixuephp.net/article-1.html');
     }
 }
